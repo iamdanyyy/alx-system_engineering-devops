@@ -1,2 +1,2 @@
 #!/bin/bash
-dfsa
+chmod 753 hello
