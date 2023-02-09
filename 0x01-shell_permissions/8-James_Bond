@@ -1,2 +1,2 @@
 #!/bin/bash
-qwc
+chmod 007 hello
