@@ -1,2 +1,2 @@
 #!/bin/bash
-[ "$(stat -c %U hello)" = "guillaume" ] ( [ "$USER" = "guillaume" ] (sudo chown -v betty hello) )
+chown -R betty:guillaume hello && stat -c "%U" hello | grep -q "betty" || echo "Ownership not changed."
